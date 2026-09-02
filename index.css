@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-amiri: 'Amiri', serif;
+    --font-tajawal: 'Tajawal', sans-serif;
+    --font-cinzel: 'Cinzel', serif;
+  }
+
+  body {
+    font-family: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #08080D;
+    color: #FFFFFF;
+  }
+}
+
+.font-serif-arabic {
+  font-family: 'Amiri', serif;
+}
+
+.font-sans-arabic {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.font-display-en {
+  font-family: 'Cinzel', serif;
+}
+
+/* Artistic Dot-Grid Texture */
+.artistic-dot-grid {
+  background-image: radial-gradient(#D7B56D 0.6px, transparent 0.6px);
+  background-size: 30px 30px;
+}
+
+/* Artistic Flair Glass & Panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(215, 181, 109, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 12px 40px 0 rgba(110, 24, 53, 0.3);
+}
+
+.glass-card-rose {
+  background: linear-gradient(135deg, rgba(110, 24, 53, 0.2) 0%, rgba(18, 16, 25, 0.6) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 160, 183, 0.25);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(180deg, #D7B56D 0%, #B89248 60%, #6E1835 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient-artistic {
+  background: linear-gradient(180deg, #D7B56D 0%, #8B2245 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E8A0B7 60%, #C46E8A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  text-shadow: 0 0 30px rgba(215, 181, 109, 0.45);
+}
+
+.rose-glow {
+  text-shadow: 0 0 25px rgba(232, 160, 183, 0.4);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080D;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(215, 181, 109, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(215, 181, 109, 0.5);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.06);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 7s ease-in-out infinite;
+}
+
