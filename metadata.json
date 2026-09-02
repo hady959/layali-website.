@@ -1,0 +1,6 @@
+{
+  "name": "LAYALI — A Story Worth Remembering",
+  "description": "An ultra-premium, cinematic, and romantic personalized digital gift in Arabic for Layali from Hadi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
